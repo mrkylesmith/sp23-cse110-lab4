@@ -1,0 +1,3 @@
+# DevTools Answers
+1. The bug is that the two variables that are suppose to contain the first and second number to add, `num1` and `num2` are string types, so on line 11 in `explore.js` string concatination is performed, instead of performing addition on two numbers.
+2. I would convert the two numbers (that are passed as strings through the parameters) `num1` and `num2` into numbers: `Number(num1) + Number(num2)` to calculate the correct numeric result using addition instead of string concatination. I have attached a screenshot (`fix.png`) of my fix.
